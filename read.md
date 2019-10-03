@@ -43,3 +43,7 @@ cookie based authentication
 ## 42 encoding users
 
 OAuth's only purpose is to allow someone to sign in. After that, we use our own internal ID's
+
+## 54 fixing heroku proxy issue
+Error: redirect_uri_mismatch
+=> proxy: true
