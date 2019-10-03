@@ -4,12 +4,12 @@ module.exports = (app) => {
     app.get('/auth/google',
         passport.authenticate('google', {
             // options object. what kind of user info do you want to access?
-            scope:['profile', 'email']
+            scope: ['profile', 'email']
         })
     );
 
     app.get(
-        '/auth/google/callback', 
+        '/auth/google/callback',
         passport.authenticate('google')
     );
 
