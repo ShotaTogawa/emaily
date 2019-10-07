@@ -47,3 +47,6 @@ OAuth's only purpose is to allow someone to sign in. After that, we use our own 
 ## 54 fixing heroku proxy issue
 Error: redirect_uri_mismatch
 => proxy: true
+
+## 58 concurrently
+Concurrenlyを使って、serverとclientのサーバーを同時に立ち上げることができる。
