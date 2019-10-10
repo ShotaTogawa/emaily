@@ -36,4 +36,8 @@ An action creator always expects us to return in action
 
 ## 119
 
-Push to Heroku -> Heroku installs server deps -> Heroku runs "heroku-postbuild" -> We tell Heroku to install client apps -> We tell Heroku to run "npm run build"
+obj.nameとobj['name']の違いを調べる
+
+## 179
+
+localTunnelで、自分のlocalhostを外部サーバーから識別できるようにする

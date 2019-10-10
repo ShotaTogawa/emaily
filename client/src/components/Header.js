@@ -13,7 +13,7 @@ class Header extends Component {
             default:
                 return (
                 <Fragment>
-                    <li key="1"><Payments /></li>,
+                    <li key="1"><Payments /></li>
                     <li key="3" style={{margin: '0 10px'}}>
                         Credits: {this.props.auth.credits}
                     </li>
@@ -23,7 +23,6 @@ class Header extends Component {
         }
     }
     render() {
-        console.log(this.props.auth);
         return (
             <nav>
                 <div className="nav-wrapper">

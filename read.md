@@ -50,3 +50,6 @@ Error: redirect_uri_mismatch
 
 ## 58 concurrently
 Concurrenlyを使って、serverとclientのサーバーを同時に立ち上げることができる。
+
+## 125 Limmitation of subdocument collections
+Mongo Size limit for a single record = 4mb

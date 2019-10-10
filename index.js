@@ -2,12 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 // 順番大事
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
-const billingRoutes = require('./routes/billingRoutes')
+const billingRoutes = require('./routes/billingRoutes');
+const surveyRoutes = require('./routes/surveyRoutes');
 const keys = require('./config/keys');
 
 
@@ -31,6 +33,7 @@ app.use(passport.session());
 // require('./routes/authRoutes')(app)
 authRoutes(app);
 billingRoutes(app);
+surveyRoutes(app);
 
 if(process.env.NODE_ENV === 'production') {
     // Express will serve up production assets
@@ -45,7 +48,7 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
     console.log(PORT);
